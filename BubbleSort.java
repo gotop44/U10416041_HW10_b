@@ -9,6 +9,7 @@ public class BubbleSort {
 		
 		Scanner input = new Scanner(System.in);
 		
+		/** Prompt user to input numbers of integer */
 		System.out.print("\nHow many integers you want to Bubble Sort: ");
 		int n = input.nextInt();
 		
@@ -18,7 +19,7 @@ public class BubbleSort {
 			
 			bubble[i] = input.nextInt();
 		}
-		
+		/** Bubble Sort */
 		for (int i = 0; i < n - 1; i++) {
 			
 			for (int j = 0; j < n - 1 - i; j++) {
@@ -31,7 +32,7 @@ public class BubbleSort {
 				}
 			}
 		}
-		
+		/** Display the result */
 		System.out.print("\nBubble Sort: ");
 		for (int i = 0; i < n; i++) {
 			System.out.print(bubble[i] + " ");
